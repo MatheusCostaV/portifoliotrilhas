@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Formulário de Inscrição</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            min-height: 100dvh;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: space-between;
-            background-color: #F37820;
-        }
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-            max-height: 80vh;
-            border-radius: 5px;
-        }
-        .form-container input[type=text],
-        .form-container input[type=email],
-        .form-container input[type=tel],
-        .form-container input[type=number] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        .form-container button {
-            background-color: #F37820;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-        .form-container button:hover {
-            opacity: 0.8;
-        }
-        .image-container {
-            width: 50%;
-            background-color: #F37820;
-    
-            background-image: url('./img/imagemtrilhas.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Layout Responsivo</title>
 </head>
 <body>
-    <div class="form-container">
-        <h1>Inscreva-se</h1>
-        <form>
-            <input type="text" placeholder="Nome Completo">
-            <input type="email" placeholder="E-mail">
-            <input type="number" placeholder="CPF">
-            <input type="tel" placeholder="Telefone">
-            <input type="text" placeholder="Endereço">
-            <input type="text" placeholder="Cidade">
-            <button type="submit">Enviar</button>
-            <button type="reset">Cancelar</button>
-        </form>
-        <p>*Atenção: Todos os dados acima são obrigatórios</p>
-    </div>
-    <div class="image-container">
-    
-    </div>
+
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-m"></i>
+            </div><!--logo-->
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <div class="cabeçalho-link" id="cabeçalho-link">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Serviços</a>
+                </li>
+                <li>
+                    <a href="#">Trabalho</a>
+                </li>
+                <li>
+                    <a href="mailto:matheusvictor342@gmail.com"><button>Meu Contato</button></a>
+                </li>
+            </div><!--cabeçalho-link-->
+        </header>
+
+        <div class="container-text">
+            <div class="text">
+                <h3>Ola, Pessoal</h3>
+                <h1>Eu sou <span>Matheus Costa</span></h1>
+                <p>Tenho 21 anos e sou estudante na Universidade Federal do Maranhão (UFMA), onde curso Ciência e Tecnologia com foco em Engenharia da Computação. Estou dando meus primeiros passos na área da programação, buscando novos conhecimentos e habilidades.</p>
+                <div class="redes-social">
+                    <a href="https://www.linkedin.com/in/matheus-costa-90b5ba228/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MatheusCostaV"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/matheus.assiscst/"><i class="fa-brands fa-instagram"></i></a>
+                </div><!--redes-social-->
+                <button class="btn" id="sobre-mim-btn">Sobre Mim</button>
+            </div><!--text-->
+        </div><!--container-text-->
+    </div><!--background-->
+
+    <section id="sobre-mim" class="sobre-mim">
+        <div class="sobre-mim-content">
+            <h2>Sobre Mim</h2>
+            <p>Aqui está um texto sobre mim. Adicione aqui as informações que você gostaria de compartilhar sobre sua pessoa, sua carreira, seus objetivos e qualquer outra coisa relevante.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </body>
 </html>
