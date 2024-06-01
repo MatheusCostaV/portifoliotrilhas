@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+
+:root{
+    --primary-color: #f02eaa;
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box; 
+    background-color: black;
+    color: #ffffff;
+}
+
+.destaque-conhecimento {
+    color: var(--primary-color);
+}
+
+.principal {
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu_link{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.logos_icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+}
+
+.sub-titulo {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: "Chakra Petch", sans-serif;
+    border: 10px solid var(--primary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+.links:hover {
+    background-color: rgb(43, 1, 51);
+  }
+
+.fotominha{
+    width: 50%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+  .rodape {
+    padding: 30px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.5rem;
+    
+  }
+
+
+  @media (max-width: 1200px) {
+        .cabecalho{
+            padding: 10%;
+        }
+
+        .cabecalho_menu{
+            justify-content: center;
+        }
+
+        .principal{
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+        .apresentacao__conteudo{
+            width: auto;
+        }
+
+  }
